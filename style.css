@@ -16,7 +16,7 @@ body, html {
     src: url(ShadowsIntoLight-Regular.ttf);
 }  
 
-.titlebox {
+.titleBox {
     color: rgb(29, 28, 28);
     background-image: url("images/cover_cropped.jpg");
     height: 100%;
@@ -40,12 +40,20 @@ h2 {
     font-weight: bold;
     text-align: center;
     padding-top: 70px;
-}  
+} 
+
+h3 {
+    font-family: TitleFont;
+    font-weight: bold;
+    text-align: center;
+    font-size: 35px;
+}
 
 .mainBox {
     justify-content: center;
     background-color:#a3d9ec;
     margin: solid;
+    margin-top: 10px;
     margin-left: 10px;
     margin-right: 10px;
     padding-left: 10px;
@@ -55,7 +63,6 @@ h2 {
     border-style: solid;
     border-radius: 10px;
     line-height: 30px;
- 
 }
 
 .indent {
@@ -119,7 +126,6 @@ h2 {
     background-size: 100%;
     background-position: center;
     transition: .5s;
-    /* text-align: center; */
     border-radius: 10px;
 }
 
@@ -136,7 +142,7 @@ h2 {
     right: 0;
     white-space: pre-wrap;
     overflow: hidden;
-    background-color: #a1a444;
+    background-color: white;
     opacity: .8;
     color: rgb(26, 53, 11);
     font-weight: bolder;
@@ -184,3 +190,52 @@ footer {
     font-size: 13px;
     margin-left: 10px;
   }
+
+.photoDescription {
+    position: relative;
+    height: 300px;
+    width: 400px;
+    float: left;
+    background-size: 100%;
+    background-position: center;
+    transition: .5s;
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    margin: 3px;
+}
+
+
+.photoDescription:hover {
+    background-size: 110%;
+    border-radius: 10px;
+}
+
+.photoDescription:after {
+    position: absolute;
+    top: 100%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    white-space: pre-wrap;
+    overflow: hidden;
+    color: black;
+    background-color: white;
+    opacity: .7;
+    font-weight: bolder;
+    text-align: center;
+    font-size: 14px;
+    padding: 0 8px;
+    content: attr(data-text);
+    transition: .5s;
+    border-radius: 10px;
+}
+
+.photoDescription:hover::after {
+    top: 80%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 8px;
+    background-color: rgba(0,0,0,0,6);
+    border-radius: 10px;
+}
