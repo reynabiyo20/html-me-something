@@ -10,7 +10,7 @@ body, html {
 @font-face {
     font-family: TitleFont;
     src: url(SpecialElite-Regular.ttf);
-  }
+}
 @font-face {
     font-family: SubTitleFont;
     src: url(ShadowsIntoLight-Regular.ttf);
@@ -76,7 +76,7 @@ h3 {
     font-family: TitleFont;
     font-weight: bolder;
     font-feature-settings: "vjmo";
-  }
+}
 
 #quote {
     color: #a1a444;
@@ -178,18 +178,18 @@ footer {
     line-height: 20px;
     text-align: center;
     color: white;
-  }
+}
 
-  #copyright {
+#copyright {
     background-color: rgb(151, 167, 81);
     font-size: 25px;
-  }
+}
 
-  #references {
+#references {
     color: white;
     font-size: 13px;
     margin-left: 10px;
-  }
+}
 
 .photoDescription {
     position: relative;
